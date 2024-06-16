@@ -51,7 +51,19 @@ const FeatureTitle = styled.h3`
 const FeatureDescription = styled.p`
   color: #666;
 `;
+const Featurebutton = styled.a`
+  display: inline-block;
+  background-color: #5883d3;
+  color: #fff;
+  padding: 6px 12px; 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
 
+  &:hover {
+    background-color: #000000;
+  }
+`;
 const Features = () => {
   return (
     <FeaturesWrapper>
@@ -60,17 +72,22 @@ const Features = () => {
         <Feature>
           <FeatureIcon className="fa fa-book"></FeatureIcon>
           <FeatureTitle>Study Materials</FeatureTitle>
-          <FeatureDescription>Access a wide range of study materials.</FeatureDescription>
+          <Featurebutton href="/">Click</Featurebutton>
+
+          <FeatureDescription> Access to All study materials.</FeatureDescription>
         </Feature>
         <Feature>
           <FeatureIcon className="fa fa-calendar"></FeatureIcon>
           <FeatureTitle>Event Calendar</FeatureTitle>
-          <FeatureDescription>Stay updated with upcoming events and deadlines.</FeatureDescription>
+          <Featurebutton href="/">Click</Featurebutton>
+
+          <FeatureDescription>Stay updated with the events</FeatureDescription>
         </Feature>
         <Feature>
           <FeatureIcon className="fa fa-upload"></FeatureIcon>
           <FeatureTitle>Contribute</FeatureTitle>
-          <FeatureDescription>Upload study materials and help others.</FeatureDescription>
+          <Featurebutton href="/">Click</Featurebutton>
+          <FeatureDescription>Upload study materials Here</FeatureDescription>
         </Feature>
       </FeaturesContainer>
     </FeaturesWrapper>

@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const HeroWrapper = styled.section`
-  background-image: url('/src/assets/hero-bg1.jpg');
+  background-image:url('src');
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -53,7 +53,7 @@ const Hero = () => {
       <HeroContent>
         <HeroTitle>Welcome to Karo Padhai</HeroTitle>
         <HeroSubtitle>Discover a new way to learn</HeroSubtitle>
-        <HeroButton href="/index.html">Get Started</HeroButton>
+        <HeroButton href="/">Get Started</HeroButton>
       </HeroContent>
     </HeroWrapper>
   );

@@ -30,12 +30,20 @@ const AboutDescription = styled.p`
   margin-bottom: 30px;
 `;
 
-const AboutImage = styled.img`
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-`;
 
+const Aboutbutton = styled.a`
+  display: inline-block;
+  background-color: #5883d3;
+  color: #fff;
+  padding: 6px 12px; 
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #000000;
+  }
+`;
 const About = () => {
   return (
     <AboutWrapper>
@@ -44,7 +52,7 @@ const About = () => {
         <AboutDescription>
           Yet to be worked upon
         </AboutDescription>
-        <AboutImage/>
+        <Aboutbutton href='/'>Click</Aboutbutton>
       </AboutContent>
     </AboutWrapper>
   );
