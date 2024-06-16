@@ -19,6 +19,7 @@ const Navigation = styled.nav`
     display: flex;
     margin: 0;
     padding: 0;
+    text-align: center; /* Center text in list items */
   }
 
   li {
@@ -40,10 +41,12 @@ const Navigation = styled.nav`
     align-items: flex-start;
 
     ul {
+      display: ${props => (props.isOpen ? 'flex' : 'none')}; /* Toggle visibility */
       flex-direction: column;
       align-items: center;
-      margin-top: 10px;
-      display: ${props => (props.isOpen ? 'flex' : 'none')}; /* Toggle visibility */
+      width: 100%; /* Full width on mobile */
+      padding: 0; /* Remove default padding */
+      margin: 10px 0; /* Adjust margin */
     }
 
     li {
